@@ -45,14 +45,51 @@
                             <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}" required>
                         @endif
                     </div>
+
+
+
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}" required>
+                        @if (auth()->user())
+                            <input type="text" class="form-control" id="name" name="name" value="{{ auth()->user()->name }}" readonly>
+                        @else
+                            <input type="text" class="form-control" id="text" name="name" value="{{ old('name') }}" required>
+                        @endif
                     </div>
-                    <div class="form-group">
+
+
+                     <div class="form-group">
+                        <label for="address">Address</label>
+                        @if (auth()->user())
+                            <input type="text" class="form-control" id="address" name="address" value="{{ auth()->user()->address }}" readonly>
+                        @else
+                            <input type="text" class="form-control" id="text" name="address" value="{{ old('address') }}" required>
+                        @endif
+                    </div>
+
+
+            
+
+
+
+
+                    <!-- <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}" required>
+                    </div> -->
+
+
+
+                  <!--  <div class="form-group">
                         <label for="address">Address</label>
                         <input type="text" class="form-control" id="address" name="address" value="{{ old('address') }}" required>
-                    </div>
+                    </div> -->
+
+
+
+
+
+
 
                     <div class="half-form">
                         <div class="form-group">
@@ -166,7 +203,7 @@
     <script>
         (function(){
             // Create a Stripe client
-            var stripe = Stripe('pk_test_JKVJPMynL8ckk7ivBxoroTlT');
+            var stripe = Stripe('pk_test_GMfW31E1hz44IEpRYK8rUxT2');
 
             // Create an instance of Elements
             var elements = stripe.elements();

@@ -1,6 +1,6 @@
 <footer>
     <div class="footer-content container">
-        <div class="made-with">Made with <i class="fa fa-heart heart"></i> by Andre Madarang</div>
+        <div class="made-with"></i>&copy; <?PHP echo date("Y"); ?> - Andrew webber Intercontinental</div>
         {{ menu('footer', 'partials.menus.footer') }}
     </div> <!-- end footer-content -->
 </footer>

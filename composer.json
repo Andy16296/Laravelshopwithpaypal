@@ -9,7 +9,6 @@
     "type": "project",
     "require": {
         "php": ">=7.0.0",
-        "algolia/algoliasearch-client-php": "^1.25",
         "cartalyst/stripe-laravel": "^8.0",
         "fideloper/proxy": "~4.0",
         "gloudemans/shoppingcart": "^2.5",

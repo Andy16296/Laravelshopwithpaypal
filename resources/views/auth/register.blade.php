@@ -25,14 +25,80 @@
             <form method="POST" action="{{ route('register') }}">
                 {{ csrf_field() }}
 
+                <!-- All this below would work just need to find in the code of this app, the data that asks for the name address etc then this would all
+                    work -->
+
+           <!--     <input id="first_name" type="text" class="form-control" name="first name" value="{{ old('first name') }}" placeholder="First Name" required autofocus>
+
+                <input id="last_name" type="text" class="form-control" name="last name" value="{{ old('last name') }}" placeholder="Last Name" required autofocus>
+
+                <input id="address" type="text" class="form-control" name="address" value="{{ old('address') }}" placeholder="Address" required autofocus> 
+
+                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Email" required>
+
+                <input id="password" type="password" class="form-control" name="password" placeholder="Password" placeholder="Password" required>
+
+                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password" required> -->
+
+
+             <!--    <div class="half-form">
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" id="city" name="city" value="{{ old('city') }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="province">Province</label>
+                            <input type="text" class="form-control" id="province" name="province" value="{{ old('province') }}" required>
+                        </div>
+                    </div> --> <!-- end half-form -->
+
+                <!--    <div class="half-form">
+                        <div class="form-group">
+                            <label for="postalcode">Postal Code</label>
+                            <input type="text" class="form-control" id="postalcode" name="postalcode" value="{{ old('postalcode') }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="text" class="form-control" id="phone" name="phone" value="{{ old('phone') }}" required>
+                        </div> -->
+                <!--    </div> --> <!-- end half-form --> 
+
+
+
+
+
+
+
+
                 <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="Name" required autofocus>
 
                 <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Email" required>
 
                 <input id="password" type="password" class="form-control" name="password" placeholder="Password" placeholder="Password" required>
 
-                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password"
-                    required>
+                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password" required>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                 <div class="login-container">
                     <button type="submit" class="auth-button">Create Account</button>
