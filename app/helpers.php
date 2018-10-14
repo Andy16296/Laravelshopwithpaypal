@@ -2,7 +2,8 @@
 
 function presentPrice($price)
 {
-    return money_format('$%i', $price / 100);
+   // return money_format('$%i', $price / 100);
+    return '£'.number_format($price / 100, 2); // This £ is shown on the calculation of the money. And in Product.php the £ is diplayed on the price of the items on the picture. was $ dollor
 }
 
 function setActiveCategory($category, $output = 'active')

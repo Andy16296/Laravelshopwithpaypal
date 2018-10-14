@@ -37,7 +37,8 @@ class Product extends Model
 
     public function presentPrice()
     {
-        return money_format('$%i', $this->price / 100);
+       // return money_format('$%i', $this->price / 100);
+        return '£'.number_format($this->price / 100, 2); // the £ is diplayed on the price of the items on the picture. was $ dollor
     }
 
     public function scopeMightAlsoLike($query)
